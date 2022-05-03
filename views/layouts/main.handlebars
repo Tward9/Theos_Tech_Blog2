@@ -11,10 +11,12 @@
 
 <body>
   <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
+    <h1>Theo's Tech Blog</h1>
   </header>
   <nav>
     <a href="/">Home</a>
+    <a href="/login">Login</a>
+    <button id="logout" class="btn-no-style">Logout</button>
   </nav>
   <main>
     <aside>
@@ -24,6 +26,9 @@
       {{{body}}}
     </div>
   </main>
+  {{#if logged_in}}
+  <script src="/public/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
